@@ -12,7 +12,7 @@ struct HomeTab: View {
       VStack(spacing: 16) {
         // Button Row
         HStack(spacing: 16) {
-          NavigationLink(destination: PhotoDetailsView()) {
+          NavigationLink(destination: PhotoDetailsView(selectedImage: UIImage())) {
             Text("Go to sample image")
               .frame(maxWidth: .infinity)
               .padding()

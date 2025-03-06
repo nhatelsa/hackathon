@@ -70,9 +70,17 @@ struct CaptureTab: View {
           }))
         }
         .alert(isPresented: $viewModel.showSettingAlert) {
-          Alert(title: Text("Warning"), message: Text("Application doesn't have all permissions to use camera and microphone, please change privacy settings."), dismissButton: .default(Text("Go to settings"), action: {
-            self.openSettings()
-          }))
+          Alert(
+            title: Text("Warning"),
+            message: Text("Application doesn't have all permissions to use camera and microphone, please change privacy settings."),
+            dismissButton: .default(
+              Text(
+                "Go to settings"),
+              action: {
+                self.openSettings()
+              }
+            )
+          )
         }
         .onAppear {
           viewModel.setupBindings()

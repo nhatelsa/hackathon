@@ -2,17 +2,15 @@ import SwiftUI
 import Photos
 import AVFoundation // To access the camera related swift classes and methods
 
-struct CameraPreview: UIViewRepresentable { // for attaching AVCaptureVideoPreviewLayer to SwiftUI View
-
+struct CameraPreview: UIViewRepresentable {
   let session: AVCaptureSession
   var onTap: (CGPoint) -> Void
 
   func makeUIView(context: Context) -> VideoPreviewView {
     let view = VideoPreviewView()
-    view.backgroundColor = .black
     view.videoPreviewLayer.session = session
     view.videoPreviewLayer.videoGravity = .resizeAspect
-    view.videoPreviewLayer.connection?.videoOrientation = .portrait
+    view.videoPreviewLayer.connection?.videoRotationAngle = .greatestFiniteMagnitude
 
     // Add a tap gesture recognizer to the view
     let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handleTapGesture(_:)))
