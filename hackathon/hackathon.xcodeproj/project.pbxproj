@@ -399,6 +399,7 @@
 				DEVELOPMENT_TEAM = DQ47627WZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please accept to provide camera permission";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone so we can record your voice to check your pronunciation.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Choose a photo to use for your ELSA profile.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a photo to use for your ELSA profile.";
@@ -431,6 +432,7 @@
 				DEVELOPMENT_TEAM = DQ47627WZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please accept to provide camera permission";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone so we can record your voice to check your pronunciation.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Choose a photo to use for your ELSA profile.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a photo to use for your ELSA profile.";
